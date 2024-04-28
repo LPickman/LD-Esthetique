@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*Tipografía*/
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway+Dots&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*Variables*/
+
+:root {
+  --primary-font: "Raleway", sans-serif;
+  --second-font: "Raleway Dots", sans-serif;
+  --primary-color: #fde6dc;
+  --second-color: white;
+}
+
+/*Mis estilos*/
+img {
+  max-width: 100%;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+}
+
+.navbar-nav li a {
+  color: black;
+  font-weight: 350;
+}
+
+.navbar-nav li a:hover {
+  background-color: var(--second-color);
+}
+
+.dropdown .dropdown-menu {
+  background-color: var(--primary-color);
+}
+
+.dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: var(--second-color);
+}
