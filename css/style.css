@@ -1,7 +1,10 @@
-* {
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Raleway+Dots&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+*::before,
+*::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Asegura que el padding y border se incluyan en el ancho y alto */
 }
 
 li {
@@ -13,20 +16,17 @@ a {
   color: black;
 }
 
-/*Tipografía*/
-
-@import url("https://fonts.googleapis.com/css2?family=Raleway+Dots&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-
 /*Variables*/
-
 :root {
   --primary-font: "Raleway", sans-serif;
   --second-font: "Raleway Dots", sans-serif;
-  --primary-color: #fde6dc;
+  --primary-color: #ecd0d3;
   --second-color: white;
+  --alternative-color: #5c5c5c;
 }
 
-/*Mis estilos*/
+/*Tipografía*/
+/*Mis estilos navbar*/
 img {
   max-width: 100%;
 }
@@ -37,15 +37,18 @@ img {
 
 .navbar {
   background-color: var(--primary-color);
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
 .navbar-nav li a {
-  color: black;
-  font-weight: 350;
+  color: white;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(206, 205, 205, 0.5);
+  transition: all 0.1s ease-in-out;
 }
 
 .navbar-nav li a:hover {
-  background-color: var(--second-color);
+  color: var(--alternative-color);
 }
 
 .dropdown .dropdown-menu {
@@ -55,3 +58,146 @@ img {
 .dropdown .dropdown-menu .dropdown-item:hover {
   background-color: var(--second-color);
 }
+
+/*Button menú hamburguesa*/
+.navbar-toggler {
+  color: red !important;
+  border: none !important;
+}
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-top: 1px solid rgb(221, 220, 220);
+  background-image: url(../img/background-footer.png);
+  width: 100%;
+  background-size: cover;
+}
+
+.menu-footer {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  justify-content: center;
+}
+
+.menu {
+  width: 300px;
+  text-align: center;
+}
+
+.menu-footer__redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-footer__redes_li {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+}
+
+.menu-footer_item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(99, 98, 98);
+}
+
+.menu-footer_item a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-footer_item:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+footer p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(99, 98, 98);
+  margin: 0;
+}
+
+.logo {
+  max-width: 100%;
+  max-height: 100px;
+}
+
+.copyright {
+  padding: 10px;
+}
+.copyright p {
+  color: black;
+  font-weight: 500;
+  font-family: var(--primary-font);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item img {
+  max-height: 600px; /* Ajusta este valor para determinar el alto del carrousel. */
+  object-fit: cover;
+}
+
+.home-informacion {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.home-informacion div {
+  width: 350px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-color: rgb(255, 234, 234);
+  border-radius: 5px;
+}
+.home-informacion div h2 {
+  margin-top: 15px;
+  font-family: var(--primary-font);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.home-informacion div p {
+  font-family: var(--primary-font);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

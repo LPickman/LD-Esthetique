@@ -13,141 +13,280 @@
     />
   </head>
   <body>
-    <!-- Inicio Barra Navegación -->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container d-flex justify-content-between">
-        <a class="navbar-brand logo" href="#">
-          <img
-            src="./img/logo_LD.jpg"
-            alt="Logo de LD Esthetique"
-            style="border-radius: 500px"
-          />
-        </a>
-        <div class="flex-grow-1"></div>
+    <header>
+      <!-- Inicio Barra Navegación -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container d-flex justify-content-between">
+          <a class="navbar-brand logo" href="#">
+            <img
+              src="./img/logo_LD.jpg"
+              alt="Logo de LD Esthetique"
+              style="border-radius: 500px"
+            />
+          </a>
+          <div class="flex-grow-1"></div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Tratamientos
+                </a>
+                <ul class="dropdown-menu border-0 rounded-0">
+                  <li><a class="dropdown-item" href="#">Depilación</a></li>
+                  <li><a class="dropdown-item" href="#">Venus</a></li>
+                  <li><a class="dropdown-item" href="#">Masajes</a></li>
+                  <li><a class="dropdown-item" href="#">Radiofrecuencia</a></li>
+                  <li><a class="dropdown-item" href="#">Faciales</a></li>
+                  <li><a class="dropdown-item" href="#">Dermapen</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Circuito Moderador</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contactanos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Fin Barra Navegación -->
+
+    <main>
+      <!-- Inicio de carrousel -->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/Carrousel_3.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p> -->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/Carrousel_2.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p> -->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/Carrousel_1.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p> -->
+            </div>
+          </div>
+        </div>
         <button
-          class="navbar-toggler"
+          class="carousel-control-prev"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
         </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Fin del carrousel -->
 
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
-            </li>
+      <!-- Inicio informativo -->
+      <section class="home-informacion container">
+        <div class="line-right">
+          <iconify-icon
+            icon="line-md:confirm-circle"
+            style="color: black"
+            width="50px"
+          ></iconify-icon>
+          <h2>INVERTÍ EN VOS</h2>
+          <p>
+            Aprovechá nuestras promociones y utilizá las sesiones cuando
+            quieras.
+          </p>
+        </div>
+        <div class="line-right">
+          <iconify-icon
+            icon="mingcute:hand-card-fill"
+            style="color: black"
+            width="50px"
+          ></iconify-icon>
+          <h2>MEDIOS DE PAGO</h2>
+          <p>
+            Efectivo, débito y crédito de todos los bancos, Mercado Pago. Hasta
+            en 6 cuotas sin interés.
+          </p>
+        </div>
+        <div>
+          <iconify-icon
+            icon="ic:sharp-whatsapp"
+            style="color: black"
+            width="50px"
+          ></iconify-icon>
+          <h2>TE AYUDAMOS</h2>
+          <p>
+            Podes comunicarte con nosotros a través de Whatsapp al 11 5110-1104
+          </p>
+        </div>
+      </section>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
-            <li class="nav-item dropdown">
+      <!-- Todos los scripts -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
+        defer
+      ></script>
+      <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    </main>
+
+    <footer>
+      <div class="menu-footer">
+        <div class="menu">
+          <h4>Menú</h4>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Tratamientos</a></li>
+            <li><a href="">Productos</a></li>
+            <li><a href="">Contactanos</a></li>
+          </ul>
+        </div>
+        <div class="menu-footer__contactanos">
+          <h4>Datos</h4>
+          <div class="menu-footer_item">
+            <iconify-icon icon="bxs:phone" style="color: black"></iconify-icon
+            ><a href="tel:+541151076044">+54 11 3219 - 9104</a>
+          </div>
+          <div class="menu-footer_item">
+            <iconify-icon
+              icon="nimbus:mail"
+              style="color: black"
+            ></iconify-icon>
+            <a href="mailto:pickmanleandro1@gmail.com">laura_acuña@gmail.com</a>
+          </div>
+          <div class="menu-footer_item">
+            <iconify-icon
+              icon="carbon:location-filled"
+              style="color: black"
+            ></iconify-icon>
+            <a href="https://maps.app.goo.gl/xR11XeqzN5Zm1PmU7"
+              >Ciudad de la Paz 1735, CABA.</a
+            >
+          </div>
+        </div>
+
+        <div class="menu-footer__redes">
+          <h4>Redes</h4>
+          <ul class="menu-footer__redes_li">
+            <li class="menu-footer_redes_item">
               <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                class=""
+                aria-current="page"
+                href="https://www.instagram.com/ceselectronica1/?hl=es-la"
+                target="_blank"
               >
-                Tratamientos
-              </a>
-              <ul class="dropdown-menu border-0 rounded-0">
-                <li><a class="dropdown-item" href="#">Depilación</a></li>
-                <li><a class="dropdown-item" href="#">Venus</a></li>
-                <li><a class="dropdown-item" href="#">Masajes</a></li>
-                <li><a class="dropdown-item" href="#">Radiofrecuencia</a></li>
-                <li><a class="dropdown-item" href="#">Faciales</a></li>
-                <li><a class="dropdown-item" href="#">Dermapen</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Circuito Moderador</a>
-                </li>
-              </ul>
+                <iconify-icon
+                  icon="bi:instagram"
+                  style="color: black"
+                  width="30"
+                  height="30"
+                ></iconify-icon
+              ></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Productos</a>
+            <li class="menu-footer_redes_item">
+              <a
+                class=""
+                href="https://www.facebook.com/groups/628037617983042/"
+                target="_blank"
+              >
+                <iconify-icon
+                  icon="ic:outline-facebook"
+                  style="color: black"
+                  width="30"
+                  height="30"
+                ></iconify-icon
+              ></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contactanos</a>
+            <li class="menu-footer_redes_item">
+              <a class="" href="https://twitter.com/nictronix3" target="_blank">
+                <iconify-icon
+                  icon="formkit:twitter"
+                  style="color: black"
+                  width="30"
+                  height="30"
+                ></iconify-icon
+              ></a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
 
-    <!-- Fin Barra Navegación -->
-
-    <!-- Inicio de carrousel -->
-    <div id="carouselExampleCaptions" class="carousel slide">
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
+      <div class="copyright">
+        <p>© 2024. LD Esthetique</p>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./img/Carrousel_3.jpg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./img/Carrousel_2.jpg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./img/Carrousel_1.jpg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-      defer
-    ></script>
+    </footer>
   </body>
 </html>

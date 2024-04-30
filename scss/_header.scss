@@ -1,0 +1,62 @@
+/*Mis estilos navbar*/
+img {
+  max-width: 100%;
+}
+
+.logo {
+  img {
+    height: 50px;
+  }
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.navbar-nav {
+  li {
+    a {
+      color: white;
+      font-weight: 600;
+      text-shadow: 1px 1px 2px rgba(206, 205, 205, 0.5);
+      transition: all 0.1s ease-in-out;
+    }
+  }
+}
+
+.navbar-nav {
+  li {
+    a {
+      &:hover {
+        color: var(--alternative-color);
+      }
+    }
+  }
+}
+
+.dropdown {
+  .dropdown-menu {
+    background-color: var(--primary-color);
+  }
+}
+
+.dropdown {
+  .dropdown-menu {
+    .dropdown-item {
+      &:hover {
+        background-color: var(--second-color);
+      }
+    }
+  }
+}
+
+/*Button menú hamburguesa*/
+
+.navbar-toggler {
+  color: red !important;
+  border: none !important;
+  &:focus {
+    box-shadow: none !important;
+  }
+}
