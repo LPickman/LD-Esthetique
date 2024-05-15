@@ -184,4 +184,36 @@ footer p {
   text-align: center;
 }
 
+.logo_wpp {
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.logo_wpp img {
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+.logo_wpp a {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.logo_wpp a:hover {
+  color: #2d7dd6;
+  transform: scale(1.1);
+}
+
 /*# sourceMappingURL=style.css.map */
